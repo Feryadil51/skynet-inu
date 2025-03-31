@@ -10,7 +10,7 @@
             font-family: 'Orbitron', sans-serif;
             text-align: center;
             background-color: #000016;
-            background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg'); /* Gambar luar angkasa yang lebih stabil */
+            background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -25,8 +25,18 @@
             padding: 50px;
         }
         .logo {
-            max-width: 200px;
+            max-width: 150px;
             animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
+            background: transparent;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 5px #00aaff); }
+            to { filter: drop-shadow(0 0 20px #0044ff); }
         }
         .btn {
             background: linear-gradient(90deg, #00aaff, #0044ff);
@@ -42,17 +52,9 @@
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
         }
-        h1, h2, p {
+        h1, h2, p, a {
             animation: slideUp 1.5s ease-in-out;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        @keyframes glow {
-            from { filter: drop-shadow(0 0 5px #00aaff); }
-            to { filter: drop-shadow(0 0 20px #0044ff); }
+            text-decoration: none;
         }
         .neon-text {
             color: #00aaff;
@@ -73,7 +75,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="skynet_inu_logo.png.png" alt="Skynet Inu Logo" class="logo">
+        <img src="skynet_inu_logo.png" alt="Skynet Inu Logo" class="logo">
         <h1 class="neon-text">Selamat Datang di Skynet Inu</h1>
         <p>Memecoin berbasis AI yang akan menguasai blockchain!</p>
         <a href="#buy" class="btn">Beli $SKYINU</a>
