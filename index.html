@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skynet Inu - Memecoin AI Masa Depan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="skynet_inu_logo.png" alt="Skynet Inu Logo" class="logo">
+        <h1 class="neon-text">Selamat Datang di Skynet Inu</h1>
+        <p>Memecoin berbasis AI yang akan menguasai blockchain!</p>
+        <a href="#buy" class="btn">Beli $SKYINU</a>
+    </div>
+    
+    <div class="section" id="tokenomics">
+        <h2 class="neon-text">Tokenomics</h2>
+        <p>Total Supply: 1,000,000,000 $SKYINU</p>
+    </div>
+    
+    <div class="section" id="roadmap">
+        <h2 class="neon-text">Roadmap</h2>
+        <p>Peluncuran, komunitas, listing DEX, ekspansi global.</p>
+    </div>
+    
+    <div class="section" id="how-to-buy">
+        <h2 class="neon-text">Cara Membeli</h2>
+        <p>1. Buat dompet Solana seperti Phantom atau Solflare.</p>
+        <p>2. Beli SOL di bursa kripto.</p>
+        <p>3. Hubungkan dompet ke DEX seperti Raydium.</p>
+        <p>4. Tukarkan SOL dengan $SKYINU.</p>
+    </div>
+    
+    <div class="section" id="community">
+        <h2 class="neon-text">Gabung Komunitas</h2>
+        <a href="https://twitter.com" target="_blank">Twitter</a> | 
+        <a href="https://t.me" target="_blank">Telegram</a> | 
+        <a href="https://discord.com" target="_blank">Discord</a>
+    </div>
+    
+    <script>
+        function revealSections() {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                let position = section.getBoundingClientRect().top;
+                let screenPosition = window.innerHeight / 1.3;
+                if (position < screenPosition) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealSections);
+        revealSections();
+    </script>
+</body>
+</html>
