@@ -1,62 +1,80 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skynet Inu - Memecoin AI Masa Depan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <img src="skynet_inu_logo.png" alt="Skynet Inu Logo" class="logo">
-        <h1 class="neon-text">Selamat Datang di Skynet Inu</h1>
-        <p>Memecoin berbasis AI yang akan menguasai blockchain!</p>
-        <a href="#buy" class="btn">Beli $SKYINU</a>
-    </div>
-    
-    <div class="section" id="tokenomics">
-        <h2 class="neon-text">Tokenomics</h2>
-        <p>Total Supply: 1,000,000,000 $SKYINU</p>
-    </div>
-    
-    <div class="section" id="roadmap">
-        <h2 class="neon-text">Roadmap</h2>
-        <ul class="roadmap-list">
-            <li><strong>Phase 1:</strong> Peluncuran & Pembentukan Komunitas</li>
-            <li><strong>Phase 2:</strong> Listing di DEX & Pemasaran</li>
-            <li><strong>Phase 3:</strong> Ekspansi Global & Kemitraan Strategis</li>
-            <li><strong>Phase 4:</strong> Inovasi & Pengembangan Ekosistem</li>
-        </ul>
-    </div>
-    
-    <div class="section" id="how-to-buy">
-        <h2 class="neon-text">Cara Membeli</h2>
-        <p>1. Buat dompet Solana seperti Phantom atau Solflare.</p>
-        <p>2. Beli SOL di bursa kripto.</p>
-        <p>3. Hubungkan dompet ke DEX seperti Raydium.</p>
-        <p>4. Tukarkan SOL dengan $SKYINU.</p>
-    </div>
-    
-    <div class="section" id="community">
-        <h2 class="neon-text">Gabung Komunitas</h2>
-        <a href="https://twitter.com" target="_blank">Twitter</a> | 
-        <a href="https://t.me" target="_blank">Telegram</a> | 
-        <a href="https://discord.com" target="_blank">Discord</a>
-    </div>
-    
-    <script>
-        function revealSections() {
-            let sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                let position = section.getBoundingClientRect().top;
-                let screenPosition = window.innerHeight / 1.3;
-                if (position < screenPosition) {
-                    section.classList.add('visible');
-                }
-            });
-        }
-        window.addEventListener('scroll', revealSections);
-        revealSections();
-    </script>
-</body>
-</html>
+/* Background untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Warna latar belakang gelap */
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg'); /* URL gambar latar belakang */
+    background-size: cover; /* Membuat gambar latar belakang mengisi layar */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-attachment: fixed; /* Gambar latar tetap saat di-scroll */
+    color: #fff;
+    text-align: center;
+}
+
+/* Pengaturan umum untuk logo */
+.logo {
+    max-width: 200px;
+    margin-top: 50px;
+    animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
+}
+
+/* Animasi logo */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #00aaff); }
+    to { filter: drop-shadow(0 0 20px #0044ff); }
+}
+
+/* Gaya untuk teks neon */
+.neon-text {
+    color: #00aaff;
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #0088ff, 0 0 15px #0044ff;
+}
+
+/* Styling untuk tombol */
+.btn {
+    background: linear-gradient(90deg, #00aaff, #0044ff);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+}
+
+/* Styling untuk setiap section */
+.section {
+    padding: 60px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling untuk daftar roadmap */
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
