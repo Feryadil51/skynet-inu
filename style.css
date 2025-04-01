@@ -22,10 +22,6 @@ body {
 
 .logo {
     max-width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    filter: drop-shadow(0 0 10px rgba(0, 170, 255, 0.8)); /* Efek glow */
     animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
 }
 
