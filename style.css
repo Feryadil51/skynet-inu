@@ -1,25 +1,31 @@
-/* Background untuk halaman */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000016;
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e; /* Warna latar belakang gelap */
-    background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars.jpg'); /* URL gambar latar belakang */
-    background-size: cover; /* Membuat gambar latar belakang mengisi layar */
-    background-position: center; /* Menempatkan gambar di tengah */
-    background-attachment: fixed; /* Gambar latar tetap saat di-scroll */
-    color: #fff;
+    overflow-x: hidden;
     text-align: center;
 }
 
-/* Pengaturan umum untuk logo */
-.logo {
-    max-width: 200px;
-    margin-top: 50px;
-    animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
 }
 
-/* Animasi logo */
+.logo {
+    max-width: 150px;
+    animation: float 3s ease-in-out infinite, glow 2s alternate infinite;
+    background: transparent;
+}
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -31,13 +37,17 @@ body {
     to { filter: drop-shadow(0 0 20px #0044ff); }
 }
 
-/* Gaya untuk teks neon */
+h1, h2, p, a {
+    color: white;
+    text-decoration: none;
+    animation: slideUp 1.5s ease-in-out;
+}
+
 .neon-text {
     color: #00aaff;
     text-shadow: 0 0 5px #00aaff, 0 0 10px #0088ff, 0 0 15px #0044ff;
 }
 
-/* Styling untuk tombol */
 .btn {
     background: linear-gradient(90deg, #00aaff, #0044ff);
     color: white;
@@ -54,10 +64,41 @@ body {
     box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
 }
 
-/* Styling untuk setiap section */
+.roadmap-list {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.roadmap-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.roadmap-list .icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.community-links {
+    margin-top: 20px;
+}
+
+.community-link {
+    color: #00aaff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.community-link:hover {
+    color: #0044ff;
+}
+
 .section {
     padding: 60px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
@@ -66,15 +107,4 @@ body {
 .section.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Styling untuk daftar roadmap */
-.roadmap-list {
-    list-style: none;
-    padding: 0;
-}
-
-.roadmap-list li {
-    margin: 10px 0;
-    font-size: 1.2em;
 }
