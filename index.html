@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skynet Inu - The AI Memecoin Revolution on Solana</title>
-    <meta name="description" content="$SKYINU token with 1 billion supply and 0% tax. Built on Solana for blazing fast transactions!">
-    <link rel="stylesheet" href="style.css">
+    <title>Skynet Inu - AI Memecoin Revolusioner di Solana</title>
+    <meta name="description" content="Token $SKYINU dengan supply 1 miliar dan 0% pajak. Dibangun di jaringan Solana untuk transaksi super cepat!">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background Elements -->
+    <!-- Enhanced Background Elements -->
     <div id="particles-js"></div>
     <div class="stars"></div>
     <div class="twinkling"></div>
+    <div class="laser-grid"></div>
+    <div class="pulsar" style="top: 30%; left: 20%;"></div>
+    <div class="pulsar" style="top: 70%; left: 80%; animation-delay: 2s;"></div>
+    <div class="floating-circles">
+        <div></div>
+        <div></div>
+    </div>
 
     <!-- Sound Toggle -->
     <button id="soundToggle" class="sound-btn">🔊</button>
@@ -22,28 +29,16 @@
         <!-- Hero Section -->
         <header class="hero">
             <div class="logo-container">
-                <img src="skynet_inu_logo.svg.png" alt="Skynet Inu Logo" class="logo pulse">
+                <img src="assets/image/skynet_inu_logo.svg.png" alt="Skynet Inu Logo" class="logo pulse">
                 <div class="logo-glow"></div>
             </div>
             <h1 class="neon-title">SKYNET INU</h1>
             <p class="subtitle">The Future of AI-Powered Memecoins</p>
             <div class="cta-buttons">
-                <a href="#buy" class="btn btn-primary">BUY $SKYINU</a>
+                <a href="#buy" class="btn btn-primary">BELI $SKYINU</a>
                 <a href="https://skynet-inu.github.io/whitepaper/" class="btn btn-secondary">WHITEPAPER</a>
             </div>
         </header>
-
-        <!-- Contract Address -->
-        <section class="contract-section">
-            <div class="contract-box glow">
-                <p>Contract Address:</p>
-                <div class="address-wrapper">
-                    <code id="contractAddress">7vx...X3e</code>
-                    <button id="copyButton" class="copy-btn">COPY</button>
-                </div>
-                <div class="network-tag">Solana Network</div>
-            </div>
-        </section>
 
         <!-- Tokenomics -->
         <section id="tokenomics" class="section">
@@ -51,7 +46,7 @@
             <div class="tokenomics-grid">
                 <div class="token-card">
                     <div class="token-icon">💎</div>
-                    <h3>1 Billion</h3>
+                    <h3>1 Miliar</h3>
                     <p>Total Supply</p>
                 </div>
                 <div class="token-card">
@@ -62,7 +57,7 @@
                 <div class="token-card">
                     <div class="token-icon">🔒</div>
                     <h3>100%</h3>
-                    <p>Locked LP</p>
+                    <p>LP Terkunci</p>
                 </div>
             </div>
         </section>
@@ -72,17 +67,17 @@
             <h2 class="section-title">ROADMAP</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-phase">PHASE 1</div>
-                    <h3>Launch & Community</h3>
+                    <div class="timeline-phase">FASE 1</div>
+                    <h3>Peluncuran & Komunitas</h3>
                     <ul>
-                        <li>Token Launch</li>
-                        <li>Community Building</li>
+                        <li>Launch Token</li>
+                        <li>Build Community</li>
                         <li>Airdrop Campaign</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-phase">PHASE 2</div>
-                    <h3>DEX Listings</h3>
+                    <div class="timeline-phase">FASE 2</div>
+                    <h3>DEX Listing</h3>
                     <ul>
                         <li>Raydium Listing</li>
                         <li>Marketing Push</li>
@@ -90,8 +85,8 @@
                     </ul>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-phase">PHASE 3</div>
-                    <h3>Ecosystem</h3>
+                    <div class="timeline-phase">FASE 3</div>
+                    <h3>Ekosistem</h3>
                     <ul>
                         <li>Skynet Swap</li>
                         <li>NFT Collection</li>
@@ -103,21 +98,21 @@
 
         <!-- How to Buy -->
         <section id="buy" class="section">
-            <h2 class="section-title">HOW TO BUY</h2>
+            <h2 class="section-title">CARA BELI</h2>
             <div class="buy-steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Get a Wallet</h3>
-                    <p>Install Phantom or Solflare</p>
+                    <h3>Download Wallet</h3>
+                    <p>Install Phantom atau Solflare</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Get SOL</h3>
-                    <p>Buy SOL on an exchange</p>
+                    <h3>Dapatkan SOL</h3>
+                    <p>Beli SOL di exchange</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Swap to SKYINU</h3>
+                    <h3>Swap ke SKYINU</h3>
                     <button id="connectWallet" class="wallet-btn">CONNECT WALLET</button>
                 </div>
             </div>
@@ -125,7 +120,7 @@
 
         <!-- Community -->
         <section id="community" class="section">
-            <h2 class="section-title">COMMUNITY</h2>
+            <h2 class="section-title">KOMUNITAS</h2>
             <div class="social-links">
                 <a href="https://x.com/morgan969046712?t=FYG49p8AeDMuDtqh6wx1rg&s=09" class="social-link twitter">Twitter</a>
                 <a href="https://t.me/skynetinu" class="social-link telegram">Telegram</a>
@@ -136,6 +131,6 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
