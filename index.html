@@ -3,190 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skynet Inu - The AI Memecoin of the Future</title>
+    <title>Skynet Inu - The AI Memecoin Revolution on Solana</title>
+    <meta name="description" content="$SKYINU token with 1 billion supply and 0% tax. Built on Solana for blazing fast transactions!">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Audio elements for sound effects (hidden) -->
-    <audio id="hover-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-robot-bleep-833.mp3" preload="auto"></audio>
-    <audio id="click-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-electronic-sci-fi-bleep-910.mp3" preload="auto"></audio>
-    <audio id="background-sound" loop src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" preload="auto"></audio>
-    <audio id="neon-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-bleep-902.mp3" preload="auto"></audio>
+    <!-- Background Elements -->
+    <div id="particles-js"></div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
 
-    <!-- Sound control button -->
-    <button id="sound-toggle" class="sound-btn">🔊</button>
+    <!-- Sound Toggle -->
+    <button id="soundToggle" class="sound-btn">🔊</button>
 
-    <div id="stars-container"></div>
-    
+    <!-- Main Container -->
     <div class="container">
-        <div class="logo-container">
-            <img src="skynet_inu_logo.svg.png" alt="Skynet Inu Logo" class="logo">
-            <div class="logo-glow"></div>
-            <div class="logo-pulse"></div>
-        </div>
-        <h1 class="neon-text">Welcome to Skynet Inu</h1>
-        <p>The AI-powered memecoin that will dominate the blockchain!</p>
-        <a href="#buy" class="btn">Buy $SKYINU</a>
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="logo-container">
+                <img src="skynet_inu_logo.svg.png" alt="Skynet Inu Logo" class="logo pulse">
+                <div class="logo-glow"></div>
+            </div>
+            <h1 class="neon-title">SKYNET INU</h1>
+            <p class="subtitle">The Future of AI-Powered Memecoins</p>
+            <div class="cta-buttons">
+                <a href="#buy" class="btn btn-primary">BUY $SKYINU</a>
+                <a href="#white paper.pdf" class="btn btn-secondary">WHITEPAPER</a>
+            </div>
+        </header>
+
+        <!-- Contract Address -->
+        <section class="contract-section">
+            <div class="contract-box glow">
+                <p>Contract Address:</p>
+                <div class="address-wrapper">
+                    <code id="contractAddress">7vx...X3e</code>
+                    <button id="copyButton" class="copy-btn">COPY</button>
+                </div>
+                <div class="network-tag">Solana Network</div>
+            </div>
+        </section>
+
+        <!-- Tokenomics -->
+        <section id="tokenomics" class="section">
+            <h2 class="section-title">TOKENOMICS</h2>
+            <div class="tokenomics-grid">
+                <div class="token-card">
+                    <div class="token-icon">💎</div>
+                    <h3>1 Billion</h3>
+                    <p>Total Supply</p>
+                </div>
+                <div class="token-card">
+                    <div class="token-icon">🔄</div>
+                    <h3>0%</h3>
+                    <p>Buy/Sell Tax</p>
+                </div>
+                <div class="token-card">
+                    <div class="token-icon">🔒</div>
+                    <h3>100%</h3>
+                    <p>Locked LP</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap" class="section">
+            <h2 class="section-title">ROADMAP</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-phase">PHASE 1</div>
+                    <h3>Launch & Community</h3>
+                    <ul>
+                        <li>Token Launch</li>
+                        <li>Community Building</li>
+                        <li>Airdrop Campaign</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">PHASE 2</div>
+                    <h3>DEX Listings</h3>
+                    <ul>
+                        <li>Raydium Listing</li>
+                        <li>Marketing Push</li>
+                        <li>CEX Applications</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">PHASE 3</div>
+                    <h3>Ecosystem</h3>
+                    <ul>
+                        <li>Skynet Swap</li>
+                        <li>NFT Collection</li>
+                        <li>Partnerships</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Buy -->
+        <section id="buy" class="section">
+            <h2 class="section-title">HOW TO BUY</h2>
+            <div class="buy-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Get a Wallet</h3>
+                    <p>Install Phantom or Solflare</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get SOL</h3>
+                    <p>Buy SOL on an exchange</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Swap to SKYINU</h3>
+                    <button id="connectWallet" class="wallet-btn">CONNECT WALLET</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community" class="section">
+            <h2 class="section-title">COMMUNITY</h2>
+            <div class="social-links">
+                <a href="https://x.com/morgan969046712?t=FYG49p8AeDMuDtqh6wx1rg&s=09" class="social-link twitter">Twitter</a>
+                <a href="https://t.me/skynetinu" class="social-link telegram">Telegram</a>
+                <a href="#" class="social-link discord">Discord</a>
+            </div>
+        </section>
     </div>
-    
-    <div class="section" id="tokenomics">
-        <h2 class="neon-text">Tokenomics</h2>
-        <p>Total Supply: 1,000,000,000 $SKYINU</p>
-    </div>
-    
-    <div class="section" id="roadmap">
-        <div class="roadmap-wrapper">
-            <h2 class="neon-text">Roadmap</h2>
-            <ul class="roadmap-list">
-                <li><strong>Phase 1:</strong> Launch & Community Building</li>
-                <li><strong>Phase 2:</strong> DEX Listing & Marketing</li>
-                <li><strong>Phase 3:</strong> Global Expansion & Strategic Partnerships</li>
-                <li><strong>Phase 4:</strong> Innovation & Ecosystem Development</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section" id="how-to-buy">
-        <h2 class="neon-text">How to Buy</h2>
-        <p>1. Create a Solana wallet like Phantom or Solflare</p>
-        <p>2. Buy SOL on a cryptocurrency exchange</p>
-        <p>3. Connect your wallet to a DEX like Raydium</p>
-        <p>4. Swap SOL for $SKYINU</p>
-    </div>
-    
-    <div class="section" id="whitepaper">
-        <h2 class="neon-text">Whitepaper</h2>
-        <p>Learn more about Skynet Inu's vision and mission.</p>
-        <a href="white paper.pdf" class="btn" target="_blank">Read Whitepaper</a>
-    </div>
-    
-    <div class="section" id="community">
-        <h2 class="neon-text">Join Our Community</h2>
-        <a href="https://x.com/morgan969046712?t=FYG49p8AeDMuDtqh6wx1rg&s=09" target="_blank" class="social-link">Twitter</a> | 
-        <a href="https://t.me/skynetinu" target="_blank" class="social-link">Telegram</a> | 
-        <a href="https://discord.com" target="_blank" class="social-link">Discord</a>
-    </div>
 
-    <script>
-        // Sound effects control
-        const hoverSound = document.getElementById('hover-sound');
-        const clickSound = document.getElementById('click-sound');
-        const backgroundSound = document.getElementById('background-sound');
-        const neonSound = document.getElementById('neon-sound');
-        const soundToggle = document.getElementById('sound-toggle');
-        let soundEnabled = true;
-
-        // Initialize sound volume
-        hoverSound.volume = 0.3;
-        clickSound.volume = 0.5;
-        backgroundSound.volume = 0.2;
-        neonSound.volume = 0.4;
-
-        // Toggle sound on/off
-        soundToggle.addEventListener('click', () => {
-            soundEnabled = !soundEnabled;
-            soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
-            if (soundEnabled) {
-                backgroundSound.play().catch(e => console.log('Autoplay prevented:', e));
-            } else {
-                backgroundSound.pause();
-            }
-        });
-
-        // Play background music on user interaction
-        document.body.addEventListener('click', () => {
-            if (soundEnabled) {
-                backgroundSound.play().catch(e => console.log('Autoplay prevented:', e));
-            }
-        }, { once: true });
-
-        // Hover sound effects
-        const hoverElements = document.querySelectorAll('.btn, .social-link, .roadmap-list li');
-        hoverElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                if (soundEnabled) hoverSound.play();
-            });
-        });
-
-        // Click sound effects
-        const clickElements = document.querySelectorAll('a, button');
-        clickElements.forEach(el => {
-            el.addEventListener('click', (e) => {
-                if (soundEnabled && !e.target.classList.contains('sound-btn')) {
-                    clickSound.play();
-                }
-            });
-        });
-
-        // Neon text sound effect
-        const neonTexts = document.querySelectorAll('.neon-text');
-        neonTexts.forEach(text => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && soundEnabled) {
-                        neonSound.play();
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            observer.observe(text);
-        });
-
-        // Create stars
-        function createStars() {
-            const container = document.getElementById('stars-container');
-            const starsCount = 200;
-            
-            for (let i = 0; i < starsCount; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                
-                const x = Math.random() * 100;
-                const y = Math.random() * 100;
-                const size = Math.random() * 2;
-                const opacity = Math.random();
-                const delay = Math.random() * 5;
-                
-                star.style.left = `${x}%`;
-                star.style.top = `${y}%`;
-                star.style.width = `${size}px`;
-                star.style.height = `${size}px`;
-                star.style.opacity = opacity;
-                star.style.animationDelay = `${delay}s`;
-                
-                container.appendChild(star);
-            }
-        }
-        
-        // Run when page loads
-        window.onload = function() {
-            createStars();
-            
-            // Scroll reveal effect
-            function revealSections() {
-                let sections = document.querySelectorAll('.section');
-                sections.forEach(section => {
-                    let position = section.getBoundingClientRect().top;
-                    let screenPosition = window.innerHeight / 1.3;
-                    if (position < screenPosition) {
-                        section.classList.add('visible');
-                    }
-                });
-            }
-            
-            window.addEventListener('scroll', revealSections);
-            revealSections();
-            
-            // Floating animation to logo
-            const logo = document.querySelector('.logo');
-            let floatDirection = 1;
-            setInterval(() => {
-                const currentTop = parseInt(window.getComputedStyle(logo).getPropertyValue('margin-top'));
-                if (currentTop > 10) floatDirection = -1;
-                if (currentTop < -10) floatDirection = 1;
-                logo.style.marginTop = (currentTop + floatDirection) + 'px';
-            }, 100);
-        };
-    </script>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
